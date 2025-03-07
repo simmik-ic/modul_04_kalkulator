@@ -1,11 +1,5 @@
-2025-03-07 20:14:13,763 - INFO - Uruchomienie skryptu
-2025-03-07 20:14:39,576 - INFO - Przyjêto do dzia³ania 2 argumenty [45.465, 345.68708]
-2025-03-07 20:14:39,577 - INFO - Wykonano dzia³ania z wynikiem -300.22208
-2025-03-07 20:14:39,577 - INFO - Zakoñczenie skryptu
-2025-03-07 20:15:51,104 - INFO - Uruchomienie skryptu
-2025-03-07 20:15:54,188 - INFO - Zakoñczenie skryptu bez dokonywania obliczeñ
-2025-03-07 20:16:00,982 - INFO - Uruchomienie skryptu
-2025-03-07 20:16:08,613 - INFO - Próba dzielenia przez zero
-2025-03-07 20:16:13,304 - INFO - Przyjêto do dzia³ania 4 argumenty [34.0, 23.0]
-2025-03-07 20:16:13,314 - INFO - Wykonano dzia³ania z wynikiem 1.4782608695652173
-2025-03-07 20:16:13,315 - INFO - Zakoñczenie skryptu
+2025-03-07 20:28:48,988 - Uruchomienie skryptu
+2025-03-07 20:28:53,264 - Proba dzielenia przez zero
+2025-03-07 20:28:55,216 - Przyjeto do dzialania [4] argumenty [4.0, 5.0]
+2025-03-07 20:28:55,217 - Wykonano dzialania z wynikiem 0.8
+2025-03-07 20:28:55,218 - Zakonczenie skryptu

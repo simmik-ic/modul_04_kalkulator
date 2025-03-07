@@ -66,7 +66,7 @@ if __name__ == "__main__":
             print("Błąd: Wprowadź poprawną liczbę.")
         elif dzialanie == '0':                              #obsługa przypadku wyjścia
             print("Kończę pracę")
-            logging.info("Zakończenie skryptu bez dokonywania obliczeń")
+            logging.info("Zakonczenie skryptu bez dokonywania obliczen")
             exit(0)
         else:
             dzialanie = int(dzialanie)                      #jeżeli dzialanie poprawne, zmień na intergera i proceduj
@@ -100,13 +100,13 @@ if __name__ == "__main__":
         if dzialanie==4 and len(liczby)==2 and liczby[1]==0:
             del liczby[1]
             print("Nie próbuj dzielić przez zero: Wprowadź poprawną liczbę.")
-            logging.info("Próba dzielenia przez zero")
+            logging.info("Proba dzielenia przez zero")
         
     
     #wyświetl wynik
-    logging.info(f"Przyjęto do działania {dzialanie} argumenty {liczby}")
+    logging.info(f"Przyjeto do dzialania [{dzialanie}] argumenty {liczby}")
     print(co_robie(dzialanie, liczby))
     wynik = kalkulator(dzialanie, liczby)
-    logging.info(f"Wykonano działania z wynikiem {wynik}")
+    logging.info(f"Wykonano dzialania z wynikiem {wynik}")
     print(f"Wynik to: {wynik}")    
-    logging.info("Zakończenie skryptu")
+    logging.info("Zakonczenie skryptu")
