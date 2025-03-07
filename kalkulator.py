@@ -1,5 +1,12 @@
 #Program przyjmuje dwie liczby zadane przez użytkownika i wykonuje na nich zlecone działanie
 
+import logging
+logging.basicConfig(
+    filename='log.txt',                                     #nazwa pliku logów
+    level=logging.INFO,                                     #poziom logowania
+    format='%(asctime)s - %(message)s')                     #format logów
+
+
 def kalkulator(dzialanie, liczby):
 #Funkcja wykonuje zadane działanie na podanych liczbach
 #Argumenty: dzialanie - int z zakresu [1,4]
@@ -47,6 +54,7 @@ def co_robie(dzialanie, liczby):
 
 #Część wykonywalna
 if __name__ == "__main__":
+    logging.info("Uruchomienie skryptu")
 
     #Ustalenie rodzaju działania matematycznego
     text_promptu = "Podaj działanie, posługując się odpowiednią liczbą: 1 Dodawanie, 2 Odejmowanie, 3 Mnożenie, 4 Dzielenie, 0 Zamknij: "  
@@ -58,6 +66,7 @@ if __name__ == "__main__":
             print("Błąd: Wprowadź poprawną liczbę.")
         elif dzialanie == '0':                              #obsługa przypadku wyjścia
             print("Kończę pracę")
+            logging.info("Zakończenie skryptu bez dokonywania obliczeń")
             exit(0)
         else:
             dzialanie = int(dzialanie)                      #jeżeli dzialanie poprawne, zmień na intergera i proceduj
@@ -91,8 +100,13 @@ if __name__ == "__main__":
         if dzialanie==4 and len(liczby)==2 and liczby[1]==0:
             del liczby[1]
             print("Nie próbuj dzielić przez zero: Wprowadź poprawną liczbę.")
+            logging.info("Próba dzielenia przez zero")
         
     
     #wyświetl wynik
+    logging.info(f"Przyjęto do działania {dzialanie} argumenty {liczby}")
     print(co_robie(dzialanie, liczby))
-    print(f"Wynik to: {kalkulator(dzialanie, liczby)}")
+    wynik = kalkulator(dzialanie, liczby)
+    logging.info(f"Wykonano działania z wynikiem {wynik}")
+    print(f"Wynik to: {wynik}")    
+    logging.info("Zakończenie skryptu")
